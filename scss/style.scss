@@ -1,0 +1,74 @@
+// base
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+// helper
+.container{
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+.header-main{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+.header{
+    padding: 1.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu li{
+        display: inline-block;
+    }
+    .menu a{
+        font-size: 1.3rem;
+        font-family: "Karla", serif;
+        font-weight: bold;
+        padding: 1.35rem 2.5rem;
+        display: block;
+        color: #837D88;
+        &:hover{
+            border: 1.5px solid #2C2830;
+            background-color: #2C2830;
+            color: white;
+        }
+    }
+    .menu .last-link{
+        border: 1.5px solid #2C2830;
+        color: #2C2830
+    }
+}
+
+
+
+// karla font
+// <weight>: Use a value from 200 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+
+// .karla-<uniquifier> {
+//     font-family: "Karla", serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//   }
+
+
+//$acolot:#837D88;
