@@ -1,4 +1,6 @@
 // base
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 html{
     box-sizing: border-box;
@@ -24,8 +26,15 @@ li{
     max-width: 1110px;
 }
 
+
+
+
+// layour
+
 .header-main{
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: white;
 }
@@ -45,7 +54,7 @@ li{
         padding: 1.35rem 2.5rem;
         display: block;
         color: #837D88;
-        text-transform: capitalize;
+        text-transform: uppercase;
         &:hover{
             border: 1.5px solid #2C2830;
             background-color: #2C2830;
@@ -66,7 +75,82 @@ li{
     }
 }
 
-// mobile responsive header-main
+img {
+    width: 100%;
+}
+
+//layout
+.hero-main {
+    margin-top: 70px;
+    background-color: #2D2641;
+}
+.hero  {
+    background-color:#2D2641;
+    padding-top: 103px;
+    height: 600px;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    gap: 30px;
+
+}
+.col-2-1 {
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.col-2-2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.line{
+    width: 150px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 72px;
+}
+.hero-text h1 {
+    color: white;
+    letter-spacing: 1px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    text-align: left;
+}
+.hero-text p{
+    color: white;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 26px;
+    margin-bottom: 31px;
+    line-height: 1.5;
+}
+.view{
+    padding: 15px 29px;
+    background-color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+
+}
+
+@media  (max-width: 700px) {
+    .grid {
+        display: block;
+    }
+}
+    
 
 @media (max-width:700px) {
     .menu{
@@ -81,6 +165,7 @@ li{
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
     .menu-btn .hamburger {
         width: 25px;
@@ -121,13 +206,13 @@ li{
         }
         a{
             color: white;
-            font-size: 40px;
+            font-size: 20px;
             text-align: center;
-            padding:3rem ;
+            padding:3rem;
             font-family: "Karla", serif;
-            font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
+            letter-spacing: 1.36px;
         
         }
     }
@@ -164,4 +249,18 @@ li{
 //   }
 
 
-//$acolot:#837D88;
+//$acolot:#837D88;\
+
+// .dm-serif-display-regular {
+//     font-family: "DM Serif Display", serif;
+//     font-weight: 400;
+//     font-style: normal;
+//   }
+  
+//   .dm-serif-display-regular-italic {
+//     font-family: "DM Serif Display", serif;
+//     font-weight: 400;
+//     font-style: italic;
+//   }
+  
+
