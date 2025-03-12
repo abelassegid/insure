@@ -83,6 +83,19 @@ img {
 .hero-main {
     margin-top: 70px;
     background-color: #2D2641;
+    position: relative;
+    .hero-image-right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30%;
+    }
+    .hero-image-left{
+        position: absolute;
+        bottom: -200px;
+        left: 0;
+        width: 10%;
+    }
 }
 .hero  {
     background-color:#2D2641;
@@ -231,8 +244,21 @@ img {
         transform: rotate(-45deg);
     }
 }
-
-
+.why-us-line{
+    width: 20%;
+    height: 2px;
+    background-color: white;
+}
+.why-us{
+    margin-top: 200px;
+}
+.why-us-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .why{
+        width: 20%;
+    }
+}
 
 
 
