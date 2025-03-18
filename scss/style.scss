@@ -244,21 +244,66 @@ img {
         transform: rotate(-45deg);
     }
 }
+
 .why-us-line{
     width: 20%;
     height: 2px;
-    background-color: white;
+    background-color:#979797;
+    margin-bottom: 75px;
+    .why-us{
+    margin-top: 305px;
+}
+.why-us-top{
+    margin-bottom: 95px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: #2C2830;
+    letter-spacing: -1px;
+}
 }
 .why-us{
-    margin-top: 200px;
+    margin-top: 305px;
+}
+.why-us-top{
+    margin-bottom: 95px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: #2C2830;
+    letter-spacing: -1px;
 }
 .why-us-bottom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .why{
         width: 20%;
+        padding-bottom: 33px;
     }
 }
+    .why-people{
+        padding-bottom: 30px;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+        letter-spacing: -0.39px;
+        text-transform: capitalize;     
+     }
+
+.why{
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #837D88;
+    font-size: 16px;
+    padding-top: 30px;
+    text-align: left;
+     }
+
 
 
 
