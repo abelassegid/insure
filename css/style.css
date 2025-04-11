@@ -199,5 +199,45 @@ img {
   .menu-btn .cross.hamburger::before {
     top: 0px;
     transform: rotate(-45deg); } }
+.section-main {
+  width: 100%;
+  margin-top: 306px; }
+  .section-main .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 49px; }
+  .section-main .title {
+    font-size: 72px;
+    letter-spacing: -1px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 96px; }
+  .section-main .line-2 {
+    width: 150px;
+    height: 1px;
+    background-color: #c396c6;
+    margin-bottom: 72px; }
+  .section-main .last {
+    width: 86px;
+    padding-bottom: 41px; }
+  .section-main .profile {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    letter-spacing: 0.39px;
+    text-transform: capitalize;
+    padding-bottom: 33px; }
+  .section-main .note {
+    text-align: left;
+    color: #837D88;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height: 26px;
+    font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */
