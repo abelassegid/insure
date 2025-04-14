@@ -1,243 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
+/*
+Error: Invalid CSS after "//   }": expected "{", was ""
+        on line 389 of scss/style.scss
 
-* {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0; }
+384: //     font-weight: 400;
+385: //     font-style: italic;
+386: //   }
 
-body {
-  font-size: 1.6rem; }
-
-a {
-  text-decoration: none; }
-
-li {
-  list-style: none; }
-
-.container {
-  margin: 0 auto;
-  max-width: 1110px; }
-
-.header-main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white; }
-
-.header {
-  padding: 1.8rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative; }
-  .header .menu li {
-    display: inline-block; }
-  .header .menu a {
-    font-size: 1.3rem;
-    font-family: "Karla", serif;
-    font-weight: bold;
-    padding: 1.35rem 2.5rem;
-    display: block;
-    color: #837D88;
-    text-transform: uppercase; }
-    .header .menu a:hover {
-      border: 1.5px solid #2C2830;
-      background-color: #2C2830;
-      color: white; }
-  .header .menu .last-link {
-    border: 1.5px solid #2C2830;
-    color: #2C2830; }
-  .header .menu-btn {
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    display: none;
-    border: 2px solid #2C2830; }
-
-img {
-  width: 100%; }
-
-.hero-main {
-  margin-top: 70px;
-  background-color: #2D2641; }
-
-.hero {
-  background-color: #2D2641;
-  padding-top: 103px;
-  height: 600px; }
-
-.grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: max-content;
-  gap: 30px; }
-
-.col-2-1 {
-  grid-column: 2/2;
-  grid-row: 1/2; }
-
-.col-2-2 {
-  grid-column: 1/2;
-  grid-row: 1/2; }
-
-.line {
-  width: 150px;
-  height: 1px;
-  background-color: white;
-  margin-bottom: 72px; }
-
-.hero-text h1 {
-  color: white;
-  letter-spacing: 1px;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 72px;
-  text-align: left; }
-
-.hero-text p {
-  color: white;
-  font-family: "Karla", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin-top: 26px;
-  margin-bottom: 31px;
-  line-height: 1.5; }
-
-.view {
-  padding: 15px 29px;
-  background-color: white;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-family: "Karla", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  cursor: pointer; }
-
-@media (max-width: 700px) {
-  .grid {
-    display: block; } }
-@media (max-width: 700px) {
-  .menu {
-    display: none; }
-
-  .header {
-    padding: 2.5rem 0; }
-
-  .header .menu-btn {
-    display: block;
-    margin-right: 1.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; }
-
-  .menu-btn .hamburger {
-    width: 25px;
-    height: 2px;
-    display: block;
-    background-color: #2C2830;
-    position: relative; }
-
-  .menu-btn .hamburger::after {
-    width: 25px;
-    height: 2px;
-    display: block;
-    background-color: #2C2830;
-    top: 7px;
-    content: "";
-    position: absolute; }
-
-  .menu-btn .hamburger::before {
-    width: 25px;
-    height: 2px;
-    display: block;
-    background-color: #2C2830;
-    top: -7px;
-    content: "";
-    position: absolute; }
-
-  .active.menu {
-    display: block;
-    position: absolute;
-    background-color: #2C2830;
-    top: 65px;
-    width: 100%;
-    padding: 4rem; }
-    .active.menu li {
-      display: block;
-      width: 100%;
-      margin-bottom: 2rem; }
-    .active.menu a {
-      color: white;
-      font-size: 20px;
-      text-align: center;
-      padding: 3rem;
-      font-family: "Karla", serif;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: 1.36px; }
-
-  .header .last-link a {
-    border: 1.5px solid white; }
-
-  .menu-btn .cross.hamburger {
-    background-color: transparent; }
-
-  .menu-btn .cross.hamburger::after {
-    top: 0px;
-    transform: rotate(45deg); }
-
-  .menu-btn .cross.hamburger::before {
-    top: 0px;
-    transform: rotate(-45deg); } }
-.section-main {
-  width: 100%;
-  margin-top: 306px; }
-  .section-main .section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 49px; }
-  .section-main .title {
-    font-size: 72px;
-    letter-spacing: -1px;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 96px; }
-  .section-main .line-2 {
-    width: 150px;
-    height: 1px;
-    background-color: #c396c6;
-    margin-bottom: 72px; }
-  .section-main .last {
-    width: 86px;
-    padding-bottom: 41px; }
-  .section-main .profile {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 26px;
-    letter-spacing: 0.39px;
-    text-transform: capitalize;
-    padding-bottom: 33px; }
-  .section-main .note {
-    text-align: left;
-    color: #837D88;
-    font-family: "Karla", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    line-height: 26px;
-    font-size: 16px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+scss/style.scss:389
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:468:in `update_stylesheet'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:449:in `on_file_changed'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/config.rb:28:in `call'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:117:in `block in _process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:116:in `_process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:25:in `block in loop_for'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop_for'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:85:in `_process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:51:in `block in start'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:18:in `block in new'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"//   }\": expected \"{\", was \"\"\A         on line 389 of scss/style.scss\A \A 384: //     font-weight: 400;\A 385: //     font-style: italic;\A 386: //   }"; }
